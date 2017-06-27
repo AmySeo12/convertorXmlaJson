@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <div ng-controller="fileCtrl">
+            <form ng-submit="submit(obj)">
+            <input type="file" ng-file-model="obj.testFile" />
+            <input type="submit"  value="submit" />
+            </form>
+            Submitted File :
+            <pre>
+
+            </pre>
+        </div>
+        <script src="lib/angular/angular.min.js"></script>
+        <script src="ng-file-model.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
